@@ -1,24 +1,22 @@
+/* Body CSS */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
-textarea {
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
+/* Header CSS */
 .jumbotron {
   text-align: center;
   background-color: transparent;
   color: #4e5254;
   border-radius: 0;
   border-bottom: 10px solid #4e5254;
+}
+
+/* Planner CSS */
+input {
+  background-color: transparent !important;
 }
 
 #currentDay {
@@ -38,37 +36,9 @@ textarea {
   white-space: pre-wrap;
 }
 
-
 .time-block {
   text-align: center;
   border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
 }
 
 .saveBtn {
@@ -77,11 +47,24 @@ textarea {
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+.saveBtn:hover {
+  background-color: #013663;
+  border: solid 1px #013663;
+  cursor: pointer;
 }
 
-input {
-  background-color: transparent !important;
+/* Time block colors to indicate past, present, and future entries */
+.past {
+  background-color: #dbdbdb;
+  color: white;
+}
+
+.present {
+  background-color: #ffb2ae;
+  color: white;
+}
+
+.future {
+  background-color: #b4ecb4;
+  color: white;
 }

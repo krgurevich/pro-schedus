@@ -9,15 +9,17 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <title>ProSchedus</title>
+  <title>Schedus Daily Planner</title>
 </head>
 
 <body>
+  <!-- header -->
   <header class="jumbotron">
     <h1 class="display-6">Work Day Planner</h1>
     <p class="lead">Plan your work day with <span class="pro">Schedus</span></p>
     <p id="currentDay"></p>
   </header>
+  <!-- daily planner time blocks -->
   <div class="container">
     <div class="input-group mb-3 time-block" data-hour="9">
       <span class="input-group-text">09:00 AM</span>
@@ -65,7 +67,7 @@
       <button class=" btn btn-primary saveBtn"><i style="font-size:24px" class="fa">&#xf0c7;</i></button>
     </div>
   </div>
-
+  <!-- script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
   <script type="text/javascript" src="assets/js/script.js"></script>

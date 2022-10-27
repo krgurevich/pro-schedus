@@ -1,5 +1,4 @@
-// Created a function for the current date in a header
-
+// header current date
 $(document).ready(function () {
     function getCurrentDate() {
         var currentDate = dayjs().format("dddd, MMMM DD, YYYY");
@@ -7,6 +6,7 @@ $(document).ready(function () {
     }
     getCurrentDate();
 
+    // variable for each time block
     var nineAm = localStorage.getItem('9am');
     var tenAm = localStorage.getItem('10am');
     var elevenAm = localStorage.getItem('11am');
@@ -27,13 +27,14 @@ $(document).ready(function () {
     $('#4pm').val(fourPm);
     $('#5pm').val(fivePm);
 
+    // save the input to localStorage
     $(".saveBtn").on("click", function () {
         var siblings = $(this).siblings(".description");
         var value = siblings.val();
         var id = siblings.attr("id")
         localStorage.setItem(id, value);
     })
-
+    // apply color to indicate past, present and future entry
     var timeBlocks = $(".time-block");
     var hour = dayjs().hour();
     for (var i = 0; i < timeBlocks.length; i++) {
